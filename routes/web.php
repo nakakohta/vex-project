@@ -7,6 +7,16 @@ use App\Http\Controllers\CheckoutController;
 
 /*
 |--------------------------------------------------------------------------
+| 0. コーポレートサイト（静的ページ）
+|--------------------------------------------------------------------------
+| 一言まとめ：会社紹介コンテンツ
+*/
+Route::view('/homepage', 'homepage.index')->name('homepage.index');
+Route::view('/homepage/company', 'homepage.company')->name('homepage.company');
+Route::view('/homepage/recruit', 'homepage.recruit')->name('homepage.recruit');
+
+/*
+|--------------------------------------------------------------------------
 | 1. 商品関連（誰でも見れるページ）
 |--------------------------------------------------------------------------
 | 一言まとめ：サイトの顔となる部分
