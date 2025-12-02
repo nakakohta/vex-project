@@ -29,6 +29,8 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
+            // ↓↓↓ この1行を追加（ダミーの住所を生成）
+            'address' => fake()->address(),
         ];
     }
 

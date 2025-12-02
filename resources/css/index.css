@@ -1,0 +1,122 @@
+
+
+
+
+.header-inner {
+    margin: 0 40px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: black;
+    font-weight: 500;
+}
+
+header {
+    background-color: #8b0000;
+    padding: 40px 0;
+}
+
+/* 見出しデザイン */
+.heading {
+    font-size: 25px;
+    text-align: center;
+    color: #ffd900;
+  
+}
+
+/* ==================================== */
+/* 1. 全体の基本設定 */
+/* ==================================== */
+body {
+    /* 背景色を黒に設定 */
+    background-color: black;
+    /* 全体の文字色を白に設定し、黒背景でも可読性を確保 */
+    color: white; 
+}
+
+/* ==================================== */
+/* 2. フッターセクション（黒基調のデザイン適用） */
+/* ==================================== */
+footer {
+    /* 背景色を黒に合う深みのある赤（バーガンディ）に設定 */
+    background-color: #8B0000;
+    /* 上下に余白を追加 */
+    padding: 40px 0; 
+}
+
+/* 企業SNSの見出し (footer h2) */
+footer h2 {
+    /* 中央揃え */
+    text-align: center;
+    /* 見出しとアイコンの間に余白を確保 */
+    margin-bottom: 25px;
+    
+    /* 文字色を白に設定（濃い赤背景で映えるように） */
+    color: white;
+    
+    /* 区切り線を白に設定 */
+    border-bottom: 2px solid white; 
+    /* 線との間の余白 */
+    padding-bottom: 10px; 
+
+    /* ブロックの中央配置テクニック（見出し幅をコンテンツに合わせ中央寄せ） */
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==================================== */
+/* 3. SNSアイコン部分 (.sns-icons) */
+/* ==================================== */
+.sns-icons {
+    /* 容器の幅を固定 */
+    width: 280px;
+    /* ブロック要素の中央揃え */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* アイコンを横並びにする */
+    display: flex;
+    /* アイコン間のスペースを均等に配置 */
+    justify-content: space-between;
+    /* アイテムが折り返さないように */
+    flex-wrap: nowrap; 
+}
+
+/* ==================================== */
+/* 4. 個々のSNSアイコン (.sns-item) */
+/* ==================================== */
+
+/* 個々のリンクアイテム */
+.sns-item {
+    /* マウスオーバー時のアニメーションを滑らかにするための設定 */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* アイコン画像自体のサイズ調整 */
+.sns-item img {
+    /* アイコンの統一サイズを設定 */
+    width: 45px;
+    height: 45px;
+    /* 画像の角を丸くする */
+    border-radius: 5px;
+}
+
+/* マウスが乗った時のエフェクト (ホバー) */
+.sns-item:hover {
+    /* 少し拡大 */
+    transform: scale(1.15); 
+    /* 黒背景で目立ちすぎないよう、影を薄い白に近い色で設定 */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15); 
+}
+
