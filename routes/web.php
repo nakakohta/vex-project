@@ -16,6 +16,7 @@ Route::get('/', [ProductController::class, 'index'])->name('top');
 
 // 商品詳細ページ（{id}には商品の番号が入ります）
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+Route::get('/products', [ProductController::class, 'show'])->name('products.show');
 
 
 /*

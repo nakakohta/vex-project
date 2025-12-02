@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            // ↓↓↓ ここに住所カラムを追加しました！
+            $table->string('address'); 
+            // ↑↑↑
             $table->rememberToken();
             $table->timestamps();
         });

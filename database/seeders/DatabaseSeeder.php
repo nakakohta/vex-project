@@ -20,6 +20,11 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            // ↓↓↓ この1行を追加
+            'address' => '東京都千代田区1-1-1', 
         ]);
+        
+        // 商品データのシーダーもここで呼ぶようにしておくと便利です（任意）
+        $this->call(ProductSeeder::class);
     }
 }
