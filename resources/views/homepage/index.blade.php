@@ -32,6 +32,7 @@
                     <ul>
                         <li><a href="{{ route('homepage.company') }}">会社案内</a></li>
                         <li><a href="{{ route('homepage.recruit') }}">採用情報</a></li>
+                        <li><a href="{{ route('top') }}">商品ページはこちら</a></li>
                     </ul>
                 </nav>
             </div>
