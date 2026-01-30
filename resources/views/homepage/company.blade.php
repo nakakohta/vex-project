@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="stylesheet" href="{{ asset('css/company.css') }}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEX | 会社案内</title>
-    <style>
-        body { background-color: black; color: white; }
-        header { background-color: #8b0000; padding: 40px 0; }
-        .header-inner { max-width: 1200px; margin: 0 40px; display: flex; align-items: center; justify-content: space-between; }
-        nav ul { list-style: none; display: flex; gap: 40px; }
-        nav a { color: black; font-weight: 500; text-decoration: none; }
-        .heading { font-size: 25px; text-align: center; color: #ffd900; }
-        footer { background-color: #8B0000; padding: 40px 0; }
-        footer h2 { text-align: center; margin-bottom: 25px; color: white; border-bottom: 2px solid white; padding-bottom: 10px; display: table; margin-left: auto; margin-right: auto; }
-        .sns-icons { width: 280px; margin-left: auto; margin-right: auto; display: flex; justify-content: space-between; flex-wrap: nowrap; }
-        .sns-item { transition: transform 0.3s ease-in-out; }
-        .sns-item img { width: 45px; height: 45px; border-radius: 5px; }
-        .sns-item:hover { transform: scale(1.15); box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15); }
-    </style>
-</head>
-<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VEX | 会社案内</title>
+        <style>
+            /* 全体設定：indexと統一 */
+            body {
+                background-color: black;
+                color: white;
+                margin: 0;
+                font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            }
+
+            /* ヘッダー：indexと完全に一致 */
+            header {
+                background-color: #8b0000;
+                padding: 30px 0;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .header-inner {
+                margin: 0 auto;
+                padding: 0 40px;
+                max-width: 1200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo a {
+                display: block;
+                transition: opacity 0.3s;
+            }
+
+            .logo a:hover {
+                opacity: 0.8;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav a {
+                color: #ffffff;
+                /* 視認性の高い白に変更 */
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s;
+            }
+
+            nav a:hover {
+                color: #ffd900;
+                /* ロゴと同じ黄色に */
+            }
+
+            /* メインコンテンツ：余白とレイアウトの統一 */
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 80px 20px;
+                /* indexより少し多めの余白で読みやすく */
+                text-align: left;
+                /* 文章は左寄せで見やすく */
+            }
+
+            h2 {
+                font-size: 32px;
+                color: #ffd900;
+                margin-bottom: 30px;
+                letter-spacing: 2px;
+                border-left: 5px solid #8b0000;
+                /* アクセントに赤のラインを追加 */
+                padding-left: 15px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 2;
+                /* 行間を広くして読みやすく */
+                margin-bottom: 25px;
+                color: #f0f0f0;
+            }
+
+            /* フッター：簡易版を配置（必要に応じて） */
+            footer {
+                background-color: #1a1a1a;
+                padding: 40px 0;
+                text-align: center;
+                font-size: 14px;
+                color: #888;
+                margin-top: 80px;
+            }
+                        /* フッター：SNSアイコンの配置 */
+            footer {
+                background-color: #8B0000;
+                padding: 50px 0;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            footer h2 {
+                margin-bottom: 30px;
+                color: white;
+                font-size: 24px;
+                display: inline-block;
+                border-bottom: 2px solid white;
+                padding-bottom: 8px;
+            }
+
+            .sns-icons {
+                width: 280px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .sns-item {
+                transition: transform 0.3s ease-in-out;
+                display: block;
+            }
+
+            .sns-item img {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            .sns-item:hover {
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
     <header>
         <div class="header-inner">
             <h1 class="logo">
@@ -32,6 +150,7 @@
                 <ul>
                     <li><a href="{{ route('homepage.company') }}">会社案内</a></li>
                     <li><a href="{{ route('homepage.recruit') }}">採用情報</a></li>
+                    <li><a href="{{ route('top') }}">商品ページ</a></li>
                 </ul>
             </nav>
         </div>
