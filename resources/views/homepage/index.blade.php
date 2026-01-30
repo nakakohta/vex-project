@@ -75,7 +75,7 @@
                     <img src="{{ asset('images/X.png') }}" alt="Xのアイコン">
                 </a>
                 <a href="#" class="sns-item">
-                    <img src="{{ asset('images/インスタ.png') }}" alt="インスタのアイコン">
+                    <img src="{{ asset('images/Instagram.png') }}" alt="インスタのアイコン">
                 </a>
                 <a href="#" class="sns-item">
                     <img src="{{ asset('images/TikTok.png') }}" alt="TikTokのアイコン">
