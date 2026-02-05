@@ -140,7 +140,7 @@
                 <div class="header-inner">
                     <h1 class="logo">
                         <a href="{{ route('homepage.index') }}">
-                            <img src="{{ asset('images/logo.png') }}" width="180" alt="VEX">
+                            <img src=images/logo.png width="180" alt="VEX">
                         </a>
                     </h1>
                     <nav>
