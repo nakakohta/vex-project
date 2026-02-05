@@ -170,7 +170,7 @@
                 <div class="header-inner">
                     <h1 class="logo">
                         <a href="{{ route('homepage.index') }}">
-                            <img src=../images/logo.png width="180" alt="VEX">
+                            <img src=images/logo.png width="180" alt="VEX">
                         </a>
                     </h1>
                     <nav>
@@ -219,16 +219,16 @@
                 <h2>企業SNS</h2>
                 <div class="sns-icons">
                     <a href="#" class="sns-item">
-                        <img src=../images/X.png alt="X">
+                        <img src=images/X.png alt="X">
                     </a>
                     <a href="#" class="sns-item">
-                        <img src=../images/Instagram.png alt="Instagram">
+                        <img src=images/Instagram.png alt="Instagram">
                     </a>
                     <a href="#" class="sns-item">
-                        <img src=../images/TikTok.png alt="TikTok">
+                        <img src=images/TikTok.png alt="TikTok">
                     </a>
                     <a href="#" class="sns-item">
-                        <img src=../images/LINE.png alt="LINE">
+                        <img src=images/LINE.png alt="LINE">
                     </a>
                 </div>
             </footer>
